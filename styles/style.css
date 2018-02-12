@@ -460,6 +460,9 @@ body, html {
   .btn-top {
     width: 70%;
   }
+   .circle {
+    flex-direction: column;
+  }
 }
 
 @media screen and (min-width: 767px) {
