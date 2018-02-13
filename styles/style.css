@@ -327,8 +327,12 @@ padding-top: 26px;
 font-size: 25px;
 }
 
-.instructions {
+.instructions--whole {
 padding: 0 5%;
+}
+.instructions{
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .note {
@@ -445,7 +449,7 @@ padding: 1% 5%;
       display: flex;
       padding: 10px 0 10px 0px;
   }
-  
+
   .help_content {
       flex-direction: column;
   }
