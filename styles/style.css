@@ -298,12 +298,12 @@ a.brt
   max-width: 90%;
   margin: 0 auto;
   display: flex;
-  flex-flow: row;
+  justify-content: space-around;
 }
 
 .help_content--item {
   display: flex;
-  flex-direction: row;
+  flex-direction: wrap;
   padding: 20px 0 20px 0;
 }
 
@@ -449,13 +449,6 @@ padding: 1% 5%;
   .help_content {
       flex-direction: column;
   }
-  .help_content--item {
-      flex-direction: column;
-      text-align: center;
-  }
-  .help_content--item svg {
-      text-align: center;
-  }
 }
 
 @media screen and (min-width: 418px) {
@@ -468,32 +461,12 @@ padding: 1% 5%;
   .circle {
       flex-direction: column;
   }
-  .help_content {
-      flex-direction: column;
-  }
-  .help_content--item {
-      flex-direction: column;
-      text-align: center;
-  }
-  .help_content--item svg {
-      text-align: center;
-  }
 }
 
 @media screen and (min-width: 767px) {
   .btn-top {
       width: 220px;
       font-size: 22px;
-  }
-  .help_content {
-      flex-direction: column;
-  }
-  .help_content--item {
-      flex-direction: column;
-      text-align: center;
-  }
-  .help_content--item svg {
-      text-align: center;
   }
 }
 
