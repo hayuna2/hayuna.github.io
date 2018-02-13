@@ -316,23 +316,19 @@ html {
 */
 
 .rectangle {
-    height: 80px;
-    display: block;
-    background-color: #f5f5f5;
-    padding-top: auto;
-    color: #222;
+  height: 80px;
+  background-color: #f5f5f5;
+  padding: 0 5%;
+  color: #222;
 }
 
 .rectangle__h2 {
-    margin-left: 350px;
-    padding-top: 30px;
-    line-height: 25px;
-    font-size: 25px;
+  padding-top: 26px;
+  font-size: 25px;
 }
 
 .instructions {
-    padding-left: 20px;
-    margin-left: 332px;
+  padding: 0 5%;
 }
 
 .note {
@@ -344,57 +340,34 @@ html {
     margin-top: 45px;
 }
 
+.delivery-option-one p {
+  padding: 20px;
+}
+
+strong {
+  font-size: 20px;
+}
+
 .option-one-content {
-    margin-top: 30px;
-    width: 1244px;
-    height: 256px;
+  margin-top: 30px;
 }
 
 .inside-content {
-    width: 1155px;
-    height: 253px;
-    background-color: #fff;
-    margin-left: auto;
-    margin-right: auto;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 50px;
 }
 
-.step-one {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-flow: column;
-    justify-content: flex-start;
-    width: 335px;
-    height: 253px;
-    margin-left: 30px;
-    padding-top: 20px;
-    float: left;
-}
-
-.step-two {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    width: 335px;
-    height: 253px;
-    float: left;
-    padding-top: 20px;
-    margin-left: 50px;
-}
-
-.step-three {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    width: 335px;
-    height: 253px;
-    padding-top: 20px;
-    margin-right: 30px;
-    float: right;
+.steps-first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 25%;
+  padding-top: 20px;
 }
 
 .centered {
@@ -402,48 +375,35 @@ html {
 }
 
 .option-two-content {
-    margin-top: 30px;
-    width: 1244px;
-    height: 256px;
+  margin-top: 30px;
+  width: 100%;
 }
 
 .inside-content-two {
-    width: 1244px;
-    height: 253px;
-    background-color: #fff;
-    margin-left: auto;
-    margin-right: auto;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
 }
 
-.step-one-two {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-flow: column;
-    width: 577.5px;
-    height: 253px;
-    float: left;
-}
-
-.step-two-two {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-flow: column;
-    width: auto;
-    height: 253px;
+.steps-second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: column;
+  width: 48%;
 }
 
 .btn {
-    width: 250px;
-    margin-bottom: -650px;
-    margin-left: 950px;
-    padding: 10px;
-    font-size: 22px;
-    border: 2px solid transparent;
-    background-color: #c82059;
-    color: #fff;
-    border-radius: 0;
+  float: right;
+  width: 250px;
+  margin-top: 30px;
+  padding: 10px;
+  font-size: 22px;
+  border: 2px solid transparent;
+  background-color: #c82059;
+  color: #fff;
+  border-radius: 0;
 }
 
 .btn:hover {
@@ -454,9 +414,7 @@ html {
 }
 
 .footer {
-    margin-top: 400px;
-    margin-left: auto;
-    margin-right: auto;
+  margin-top: 200px;
 }
 
 .footer-area {
@@ -464,12 +422,8 @@ html {
 }
 
 .footer-area--text {
-    font-size: 12px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1244px;
-    padding: 10px;
-    height: auto;
+  font-size: 12px;
+  padding: 1% 5%;
 }
 
 /* =================================
@@ -593,4 +547,30 @@ html {
     .top-container {
         height: 600px;
     }
+}
+
+/* MEDIA */
+
+@media screen and (max-width: 480px) {
+  p{
+    text-align: center;
+  }
+  .rectangle__h2 {
+    text-align: center;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .rectangle__h2 {
+    text-align: center;
+
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .rectangle__h2 {
+    text-align: center;
+
+  }
 }
