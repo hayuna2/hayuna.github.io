@@ -330,10 +330,7 @@ font-size: 25px;
 .instructions--whole {
 padding: 0 5%;
 }
-.instructions{
-  display: flex;
-  flex-wrap: wrap;
-}
+
 
 .note {
   margin-top: 90px;
@@ -359,7 +356,7 @@ margin-top: 30px;
 .inside-content {
 background-color: #fff;
 display: flex;
-flex-wrap: wrap;
+
 justify-content: space-between;
 padding-bottom: 50px;
 }
@@ -370,7 +367,7 @@ display: -ms-flexbox;
 display: flex;
 flex-flow: column;
 align-items: center;
-width: 25%;
+width: 30%;
 padding-top: 20px;
 }
 
@@ -395,6 +392,7 @@ display: -webkit-box;
 display: -ms-flexbox;
 display: flex;
 flex-flow: column;
+align-items: center;
 width: 48%;
 }
 
@@ -430,6 +428,7 @@ font-size: 12px;
 padding: 1% 5%;
 }
 
+
 /* =================================
               @media screen
 ==================================== */
@@ -453,6 +452,7 @@ padding: 1% 5%;
   .help_content {
       flex-direction: column;
   }
+
 }
 
 @media screen and (min-width: 418px) {
@@ -465,6 +465,9 @@ padding: 1% 5%;
   .circle {
       flex-direction: column;
   }
+}
+.steps-first{
+  flex-wrap: wrap
 }
 
 @media screen and (min-width: 767px) {
@@ -543,6 +546,16 @@ p{
   text-align: center;
 
 }
+.inside-content,
+  .inside-content-two {
+    flex-wrap: wrap;
+  }
+
+  .steps-first,
+  .steps-second {
+    width: 100%;
+    padding: 10px 0;
+  }
 }
 
 @media screen and (max-width: 940px) {
