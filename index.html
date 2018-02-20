@@ -11,74 +11,132 @@
 </head>
 
 <body>
-  <header class="top-container">
-    <nav class="top-nav">
+  <nav class="top-nav">
+    <div class="wrapper">
       <div class="nav-left">
-        <a href="#" class="logo">BankPL</a>
-        <p class="offer-name">Konto 360°</p>
+        <a href="#" class="site-logo">BankPL</a>
+        <span class="offer-name">Konto 360°</p>
       </div>
-      <a href="#" class="nav-icon">&#9776;</a>
+      
+      <button href="#" class="nav-icon">&#9776;</button>
+
       <ul class="main-nav">
-        <li><a href="#">O koncie</a></li>
-        <li><a href="#">Pakiet Bardzo Pomocny</a></li>
-        <li><a href="#">Lubię to polecam</a></li>
-        <li><a href="#">Jak otworzyć</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">O koncie</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Pakiet Bardzo Pomocny</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Lubię to polecam</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Jak otworzyć</a></li>
       </ul>
-    </nav>
-    <div class="header-title">
-      <h1>Konto 360° pełne korzyści</h1>
-      <p>z aplikacją mobilną na każdą pogodę</p>
-      <button class="btn-top">Załóż konto 360° &gt;</button>
+    </div>
+  </nav>
+
+  <header class="hero__container">
+    <div class="wrapper hero__content">
+      <h1 class="hero__title">Konto 360° pełne korzyści</h1>
+      <span class="hero__hint">z aplikacją mobilną na każdą pogodę</span>
+      <button class="btn btn--hero hero__btn">Załóż konto 360° &gt;</button>
     </div>
   </header>
-  <article id="banner Top">
-    <div class="bar-one">
-      <h1>O koncie</h1>
-    </div>
-    <p class="simple-place"><strong>Korzystaj z konta za 0 zł</strong> w dowolnym miejscu i czasie</p>
-    <div class="banner-one">
-      <h2>0zł</h2>
-      <p><b>za prowadzenie konta, kartę i wypłaty ze wszystkich bankomatów,</b></br> jeśli aktywnie korzystasz z konta osobistego, czyli przelewasz na nie swój dochód (min. 1000zł wpływów zewnętrznych miesięcznie) i </br> płacisz min. raz w miesiącu kartą do konta lub BLIKIEM</p>
-    </div>
-  </article>
-  <article id="banner bottom">
-    <div class="banner-two">
-      <div class="first-col">
-        <h1>0zł</h1>
-        <p>za przelewy krajowe w złotych w Millenecie i aplikacji mobilnej</p>
-      </div>
-      <div class="second-col">
-        <h1>0zł</h1>
-        <p>za przelewy na e-mail lub telefon</p>
-      </div>
-      <div class="third-col">
-        <h1>0zł</h1>
-        <p>za realizację zleceń stałych i poleceń zapłaty</p>
+
+  <section id="about" class="about__container section section--about">
+    <div class="section__header section__header--about"><!-- !!! byla spacja w ID !!! -->
+      <div class="wrapper">
+        <h2 class="about__title section__title">O koncie</h2>
       </div>
     </div>
-  </article>
-  <p class="app-p1">Aplikacja mobilna na każdą pogodę</p>
-  <p class="app-p2">Pobierz i aktywuj bezpłatną aplikację mobilną Banku Millennium, by mieć jeszcze więcej możliwości:</p>
-  <article id="banner app">
-    <div class="app">
-      <div class="circle ticket">
-        <img src="img/parking.png">
-        <p><b>Kupisz bilet autobusowy i opłacisz parking</b></br> w każdej chwili, bez rejestracji i dodatkowych opłat</p>
-      </div>
-      <div class="circle money">
-        <img src="img/money.png">
-        <p><b>Weźmiesz pożyczkę</b></br> w kilka kliknięć, bez zbędnych formalnośc</p>
-      </div>
-      <div class="circle pay">
-        <img src="img/pay.png">
-        <p><b>Zapłacisz telefonem</b></br> kodem BLIK lub zbliżeniowo, bez portfela i plastikowej karty</p>
-      </div>
-      <div class="circle oc">
-        <img src="img/oc.png">
-        <p><b>Wykupisz OC</b></br> skanując kod z dowodu, bez wpisywania danych pojazdu</p>
+
+    <div class="section__content section__content--about">
+      <div class="wrapper">
+        <h3 class="about__subtitle section__subtitle">
+          <strong>Korzystaj z konta za 0 zł</strong> w dowolnym miejscu i czasie
+        </h3>
+      
+        <div class="price__container price__container--main">
+          <p class="price__content">
+            <span class="price__value price__value--main">0zł</span>
+            <span class="price__description">
+              <strong>za prowadzenie konta, kartę i wypłaty ze wszystkich bankomatów,</strong></br> 
+              jeśli aktywnie korzystasz z konta osobistego, czyli przelewasz na nie swój dochód (min. 1000zł wpływów zewnętrznych miesięcznie) i płacisz min. raz w miesiącu kartą do konta lub BLIKIEM
+            </span>
+          </p>
+        </div>
+
+        <div class="about__minor-prices">
+
+            <div class="price__container price__container--transfers">
+              <p class="price__content">
+                <span class="price__value price__value--transfers">0zł</span>
+                <span>za przelewy krajowe w złotych w Millenecie i aplikacji mobilnej</span>
+              </p>
+            </div>
+
+            <div class="price__container price__container--email">
+              <p class="price__content">
+                <span class="price__value price__value--email">0zł</span>
+                <span>za przelewy na e-mail lub telefon</span>
+              </p>
+            </div>
+
+            <div class="price__container price__container--payments">
+              <p class="price__content">
+                <span class="price__value price__value--payments">0zł</span>
+                <span>za realizację zleceń stałych i poleceń zapłaty</span>
+              </p>
+            </div>
+
+        </div>
       </div>
     </div>
-  </article>
+  </section>
+
+  <section id="app" class="app__container section section--app">
+    <div class="section__header section__header--app">
+      <div class="wrapper">
+        <h2 class="section__title">Aplikacja mobilna na każdą pogodę</h2>
+      </div>
+    </div>
+
+    <div class="section__content section__content--app">
+      <div class="wrapper">
+        <h3 class="section__subtitle app__subtitle">Pobierz i aktywuj bezpłatną aplikację mobilną Banku Millennium, by mieć jeszcze więcej możliwości:</h3>
+
+        <div id="app__features">
+          <article class="feature feature--ticket">
+            <img class="feature__thumb" src="img/parking.png" alt=""/>
+            <h4 class="feature__title">
+              <strong>Kupisz bilet autobusowy i opłacisz parking</strong><br>
+              w każdej chwili, bez rejestracji i dodatkowych opłat
+            </h4>
+          </article>
+
+          <article class="feature feature--money">
+            <img class="feature__thumb" src="img/money.png" alt=""/>
+            <h4 class="feature__title">
+              <strong>Weźmiesz pożyczkę</strong><br>
+              w kilka kliknięć, bez zbędnych formalnośc
+            </h4>
+          </article>
+
+          <article class="feature feature--pay">
+            <img class="feature__thumb" src="img/pay.png" alt=""/>
+            <h4 class="feature__title">
+              <strong>Zapłacisz telefonem</strong><br>
+              kodem BLIK lub zbliżeniowo, bez portfela i plastikowej karty
+            </h4>
+          </article>
+
+          <article class="feature feature--oc">
+            <img class="feature__thumb" src="img/oc.png" alt=""/>
+            <h4 class="feature__title">
+              <strong>Wykupisz OC</strong><br>
+              skanując kod z dowodu, bez wpisywania danych pojazdu
+            </h4>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <section class="help">
     <div class="help_header">
       <h2>Pakiet Bardzo Pomocny</h2>
@@ -100,6 +158,7 @@
     </div>
     <p class="wrapper">Wybierając Konto 360° z ubezpieczeniem Pakiet Bardzo Pomocny, możesz skorzystać aż z 7 interwencji w roku. Wystarczy kontakt z całodobowym Centrum Alarmowym. <a href="#">Dowiedz się więcej</a></p>
   </section>
+  
   <section class="how-to-open">
     <div class="rectangle">
       <h2 class="rectangle__h2">Jak otworzyc konto w Banku Millennium</h2>
